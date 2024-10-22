@@ -56,9 +56,13 @@
         });
 
         document.getElementById('change_text').addEventListener('click', function() {
-            const textContainer = document.querySelector('.division h2');
-            textContainer.innerText = 'Bye Good Bye To Your Class';
-        });
+            const textContainer = document.querySelector('.division');
+            const newText = ['Bye', 'Good Bye', 'To', 'Your', 'Class'];
+
+    for(let i = 0; i < textContainers.length; i++) {
+        textContainers[i].innerText = newText[i];
+    }
+});
     </script>
 </body>
 </html>
