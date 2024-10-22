@@ -11,9 +11,12 @@
     </style>
 </head>
 <body>
-    <div class="division">
-        <h2>Hello Welcome To My Class</h2>
-    </div>
+    <div class="division">Hello</div>
+    <div class="division">Welcome</div>
+    <div class="division">To</div>
+    <div class="division">My</div>
+    <div class="division">Class</div>
+
     <div class="division">
         <input type="number" id="num1" placeholder="Enter first number">
         <input type="number" id="num2" placeholder="Enter second number">
@@ -25,6 +28,7 @@
         </select>
         <button id="calculate">Calculate</button>
     </div>
+
     <div class="division" id="result"></div>
     <button id="change_text">Change Text</button>
 
@@ -56,13 +60,13 @@
         });
 
         document.getElementById('change_text').addEventListener('click', function() {
-            const textContainer = document.querySelector('.division');
+            const textContainers = document.querySelectorAll('.division');
             const newText = ['Bye', 'Good Bye', 'To', 'Your', 'Class'];
 
-    for(let i = 0; i < textContainers.length; i++) {
-        textContainers[i].innerText = newText[i];
-    }
-});
+            for(let i = 0; i < textContainers.length; i++) {
+                textContainers[i].innerText = newText[i];
+            }
+        });
     </script>
 </body>
 </html>
